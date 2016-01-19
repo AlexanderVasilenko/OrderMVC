@@ -1,0 +1,36 @@
+﻿@model OrderForm.Domain.Entities.Order
+@{
+    ViewBag.Title = "OrderForm";
+    Layout = "~/Views/Shared/_OrderLayout.cshtml";
+}
+        <h2 class="text-center"> Order Form </h2>
+
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+            <h3>Data</h3>
+
+            foreach (var property in ViewData.ModelMetadata.Properties.Where(property => property.PropertyName != "Countries" && property.PropertyName != "IsPacked" && property.PropertyName != "Country"))
+            {
+                <div class="form-group">
+                    <label>@(property.DisplayName ?? property.PropertyName)</label>
+                    @Html.TextBox(property.PropertyName, null, new {@class = "form-control"})
+                </div>
+            }
+
+            <label>Country:</label>
+            <div class="form-group">
+                @Html.DropDownListFor(x => x.Country, Model.Countries, new {@class = "form-control"})
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    @Html.EditorFor(x => x.IsPacked)
+                    Would you like to apply a sefety pack?
+                </label>
+            </div>
+
+            <div class="text-center">
+                <input class="btn btn-primary" type="submit" value="Process the order"/>
+            </div>
+        }

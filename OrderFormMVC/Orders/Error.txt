@@ -1,0 +1,44 @@
+﻿Message :Value cannot be null.
+Parameter name: from<br/>
+StackTrace :   at System.Net.Mail.MailMessage..ctor(String from, String to)
+   at System.Net.Mail.MailMessage..ctor(String from, String to, String subject, String body)
+   at OrderForm.Domain.Processors.MailOrderProcessor.ProcessOrder(Order order, String country) in c:\users\vaa\documents\visual studio 2015\Projects\OrderFormMVC\OrderForm.Domain\Processors\MailOrderProcessor.cs:line 61
+   at OrderForm.Controllers.OrderController.Success(Order orderForm) in c:\users\vaa\documents\visual studio 2015\Projects\OrderFormMVC\OrderFormMVC\Controllers\OrderController.cs:line 44
+Date :19.01.2016 16:00:12
+
+-----------------------------------------------------------------------------
+
+Message :Value cannot be null.
+Parameter name: from<br/>
+StackTrace :   at System.Net.Mail.MailMessage..ctor(String from, String to)
+   at System.Net.Mail.MailMessage..ctor(String from, String to, String subject, String body)
+   at OrderForm.Domain.Processors.MailOrderProcessor.ProcessOrder(Order order, String country) in c:\users\vaa\documents\visual studio 2015\Projects\OrderFormMVC\OrderForm.Domain\Processors\MailOrderProcessor.cs:line 61
+   at OrderForm.Controllers.OrderController.Success(Order orderForm) in c:\users\vaa\documents\visual studio 2015\Projects\OrderFormMVC\OrderFormMVC\Controllers\OrderController.cs:line 44
+Date :19.01.2016 16:02:52
+
+-----------------------------------------------------------------------------
+
+Message :Failure sending mail.<br/>
+StackTrace :   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at OrderForm.Domain.Processors.MailOrderProcessor.ProcessOrder(Order order, String country) in c:\users\vaa\documents\visual studio 2015\Projects\OrderFormMVC\OrderForm.Domain\Processors\MailOrderProcessor.cs:line 68
+   at OrderForm.Controllers.OrderController.Success(Order orderForm) in c:\users\vaa\documents\visual studio 2015\Projects\OrderFormMVC\OrderFormMVC\Controllers\OrderController.cs:line 44
+Date :19.01.2016 16:05:25
+
+-----------------------------------------------------------------------------
+
+Message :Failure sending mail.<br/>
+StackTrace :   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at OrderForm.Domain.Processors.MailOrderProcessor.ProcessOrder(Order order, String country) in c:\users\vaa\documents\visual studio 2015\Projects\OrderFormMVC\OrderForm.Domain\Processors\MailOrderProcessor.cs:line 67
+   at OrderForm.Controllers.OrderController.Success(Order orderForm) in c:\users\vaa\documents\visual studio 2015\Projects\OrderFormMVC\OrderFormMVC\Controllers\OrderController.cs:line 44
+Date :19.01.2016 16:09:08
+
+-----------------------------------------------------------------------------
+
+Message :Failure sending mail.<br/>
+StackTrace :   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at OrderForm.Domain.Processors.MailOrderProcessor.ProcessOrder(Order order, String country) in c:\users\vaa\documents\visual studio 2015\Projects\OrderFormMVC\OrderForm.Domain\Processors\MailOrderProcessor.cs:line 67
+   at OrderForm.Controllers.OrderController.Success(Order orderForm) in c:\users\vaa\documents\visual studio 2015\Projects\OrderFormMVC\OrderFormMVC\Controllers\OrderController.cs:line 44
+Date :19.01.2016 16:10:53
+
+-----------------------------------------------------------------------------
+
